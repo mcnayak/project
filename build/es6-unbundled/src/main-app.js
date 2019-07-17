@@ -1,4 +1,4 @@
-define(["../node_modules/@polymer/polymer/polymer-element.js","../node_modules/@polymer/paper-dialog/paper-dialog.js","./modal-contents.js","./kanban-container.js","../node_modules/@polymer/iron-ajax/iron-ajax.js","../node_modules/percent/index.js"],function(_polymerElement,_paperDialog,_modalContents,_kanbanContainer,_ironAjax,_index){"use strict";_index=babelHelpers.interopRequireDefault(_index);class MainApp extends _polymerElement.PolymerElement{static get template(){return _polymerElement.html`
+define(["../node_modules/@polymer/polymer/polymer-element.js","../node_modules/@polymer/paper-dialog/paper-dialog.js","./modal-contents.js","./kanban-container.js","../node_modules/@polymer/iron-ajax/iron-ajax.js"],function(_polymerElement,_paperDialog,_modalContents,_kanbanContainer,_ironAjax){"use strict";class MainApp extends _polymerElement.PolymerElement{static get template(){return _polymerElement.html`
       <style>
         * {
           box-sizing: border-box;

@@ -3,7 +3,7 @@ import '@polymer/paper-dialog/paper-dialog.js';
 import './modal-contents.js';
 import './kanban-container.js';
 import '@polymer/iron-ajax/iron-ajax.js';
-import percent from 'percent'
+
 
 
 class MainApp extends PolymerElement {
