@@ -247,7 +247,7 @@ class MainApp extends PolymerElement {
     this.set('body', { status__c: event.detail.status__c });
     this.id = event.detail.id;
     this.$.dataAjax.method = "PUT";
-    console.log('I am in the statuschange event');
+    console.log('I am in the statuschange event');  
   }
 
   getAll() {

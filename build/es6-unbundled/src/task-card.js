@@ -101,6 +101,7 @@ define(["../node_modules/@polymer/polymer/polymer-element.js"],function(_polymer
                 <paper-item>Backlog</paper-item>
                 <paper-item>In Progress</paper-item>
                 <paper-item>Complete</paper-item>
+                <paper-item>Delete</paper-item>
               </paper-listbox>
             </paper-dropdown-menu>
         </section>

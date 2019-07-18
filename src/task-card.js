@@ -105,6 +105,7 @@ class TaskCard extends PolymerElement {
                 <paper-item>Backlog</paper-item>
                 <paper-item>In Progress</paper-item>
                 <paper-item>Complete</paper-item>
+                <paper-item>Delete</paper-item>
               </paper-listbox>
             </paper-dropdown-menu>
         </section>

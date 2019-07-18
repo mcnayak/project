@@ -41,7 +41,7 @@ module.exports = function (app) {
     const record = nforce.createSObject('Kanban__c');
     record.set('Id', req.params.id);
     record.set('Status__c', req.body.status__c);
-  
+    
     conn.update({ sobject: record }, (err, data) => {
       if (!err) {
         res.json({ success: true });
@@ -50,4 +50,7 @@ module.exports = function (app) {
       }
     });
   });
+
+  
 };
+
