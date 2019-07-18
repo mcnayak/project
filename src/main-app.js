@@ -246,7 +246,17 @@ class MainApp extends PolymerElement {
   statusChange(event) {
     this.set('body', { status__c: event.detail.status__c });
     this.id = event.detail.id;
-    this.$.dataAjax.method = "PUT";
+    console.log(this.body.status__c);
+    if (this.body.status__c === "Delete") {
+      this.$.dataAjax.method = "DELETE";
+      console.log('dataAjax is set to DELETE');
+      //this.$.dataAjax.method = "GET";
+    }
+    else{
+      this.$.dataAjax.method = "PUT";
+      console.log('dataAjax is set to PUT');
+    }
+    
     console.log('I am in the statuschange event');  
   }
 
@@ -262,7 +272,10 @@ class MainApp extends PolymerElement {
       this.set('tasks', res.response);
       console.log('Listing Tasks');
       console.log(res);
-    } else {
+    } else if (this.$.dataAjax.method === "DELETE") {
+      console.log('A Task is to be delete');
+    }
+    else {
       console.log(res);
       this.getAll();
     }
