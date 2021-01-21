@@ -28,7 +28,7 @@
     "nforce": "^1.12.2",
     "percent": "^2.0.0",
     "polymer-cli": "^1.9.11",
-    "socket.io": "^2.2.0",
+    "socket.io": "^2.4.0",
     "web-animations-js": "^2.3.1"
   }
 }
